@@ -1,0 +1,156 @@
+#graph_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#graph {
+    width: 100%;
+    height: 100%;
+
+    /*
+    width: 3000px;
+    height: 3000px;
+    */
+
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+    background: black url('../img/space.jpg') no-repeat 50% 50%;
+}
+
+#graph text, #graph circle {
+    cursor: pointer;
+}
+
+#graph_header {
+    text-align: center;
+}
+
+#graph_header sup span {
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+#graph_header sup {
+    display: none;
+}
+
+#graph_header.fs {
+    cursor: pointer;
+}
+
+#graph_header.fs sup {
+    display: inline!important;
+}
+
+.uni-mega {
+    opacity: 0.5;
+}
+
+.mega text {
+    font-weight: bold;
+}
+
+svg text {
+    font-family: 'Helvetica';
+    cursor: default;
+}
+
+svg text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+svg text::selection {
+    background: none;
+}
+
+.tag-lists {
+    font-size: 10px;
+}
+
+.tag-lists div {
+    padding-right: 0;
+}
+
+.tag-lists ul {
+    list-style: none;
+    padding-left: 12px;
+}
+
+.tag-lists li {
+    cursor: pointer;
+}
+
+.tag-lists li:hover {
+    text-decoration: underline;
+}
+
+.star {
+    position: relative;
+}
+
+.star span {
+    position: absolute;
+    left: -12px;
+    background-color: #000;
+}
+
+.tag-lists .col-md-1 {
+    width: 11.1%!important;
+}
+
+@media (max-width: 992px) {
+    .tag-lists {
+        overflow-y: auto;
+        max-height: 400px;
+        font-size: 16px;
+    }
+
+    .star span {
+        left: -20px;
+    }
+
+    .tag-lists .col-md-1 {
+        width: 50%!important;
+    }
+}
+
+.book {
+    cursor: pointer;
+}
+
+.book-popup {
+    position: relative;
+    width: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book-popup img {
+    width: 100%;
+}
+
+.book-popup .mfp-close {
+    color: #FFF;
+    font-size: 60px;
+    right: -30px;
+}
+
+.svg-optimize svg, .svg-optimize svg * {
+    shape-rendering: optimizeSpeed;
+    color-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.hidden * {
+    display: none;
+    visibility: hidden;
+}

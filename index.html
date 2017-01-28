@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вселенная книг МИФа</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body.with-glow #universe {
+            filter: url("#glow");
+        }
+
+        .mega circle {
+            filter: url("#blur");
+        }
+    </style>
+</head>
+<body>
+    <h1 id="graph_header">Вселенная книг МИФа<sup><span class="glyphicon glyphicon-fullscreen"></span></sup></h1>
+
+    <div id ="graph_wrapper">
+        <svg id="graph">
+            <defs>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <filter id="blur" x="-200%" y="-200%" width="400%" height="400%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="30"/>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="container-fluid"></div>
+
+    <script src="vendor/d3.js" charset="utf-8"></script>
+    <script src="vendor/jquery.js" charset="utf-8"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js" charset="utf-8"></script>
+
+    <script src="js/layout.js"></script>
+    <script src="js/legend.js"></script>
+    <script src="js/planets.js"></script>
+    <script src="js/star.js"></script>
+    <script src="js/special.js"></script>
+    <script src="js/universe.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
